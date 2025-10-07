@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Pembuat</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .profil-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      justify-content: center;
+    }
+    .profil-card {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+    }
+    .profil-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 2px solid #ffcc00;
+    }
+    .profil-card h3 {
+      margin: 5px 0;
+      color: #222;
+    }
+    .profil-card p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    /* Responsif buat HP */
+    @media (max-width: 600px) {
+      .profil-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .profil-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="pencapaian.html">Pencapaian</a>
+    <a href="profil.html">Profil Pembuat</a>
+  </nav>
+
+  <h1>Profil Pembuat Website</h1>
+  <p>Berikut adalah profil pembuat website sederhana tentang ONIC Esports.</p>
+
+  <div class="profil-container">
+    <div class="profil-card">
+      <img src="gantengku.jpg" alt="Foto Dimas">
+      <h3>Dimas Rizki M. Y</h3>
+      <p>Penulis dan pembuat Website ini. Tertarik pada dunia E-sport</p>
+    </div>
+
+    <div class="profil-card">
+      <img src="gantengnya.jpg" alt="Foto Teman">
+      <h3>Alvi</h3>
+      <p>Rekan kece satu tim pembuat web ini, bagian cari data dan tunya tanya</p>
+    </div>
+  </div>
+</body>
+</html>
